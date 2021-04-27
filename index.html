@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final_Bustos_Paulich</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top" id="navbarSection">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">✤ Popelini Patisserie </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#bienvenida">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#catalogo">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#compra">Comprar</a>
+              </li>
+              
+             
+            </ul>
+          </div>
+        </div>
+    </nav>
+     
+    <section id="bienvenida">
+        <h1 id= "nombre">Popelini Patisserie</h1>
+    </section>
+
+    <section id="catalogo">
+       <div class="container" id="contenedor_img">
+           <div class="row">
+                <div class="col-md">
+                    <div class="card" style="width: 25rem;">
+                        <img class="card-img-top" src="img/1.jpg" alt="Macarons">
+                        <div class="card-body">
+                        <p class="card-text"><b>Macarons</b><br>Rellenos con ganache de chocolate blanco. Caja con 10 unidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 25rem;">
+                        <img class="card-img-top" src="img/2.jpg" alt="Chocolate Dacquoise">
+                        <div class="card-body">
+                        <p class="card-text"><b>Chocolate Dacquoise</b><br>Merengue de almendras, buttercream y base de biscuit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card" style="width: 25rem;">
+                        <img class="card-img-top" src="img/3.jpg" alt="Torta Fraisier">
+                        <div class="card-body">
+                        <p class="card-text"><b>Torta Fraisier</b><br>Bizcocho genovés, relleno de crema muselina y frutillas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 25rem;">
+                        <img class="card-img-top" src="img/4.jpg" alt="Paris-Brest">
+                        <div class="card-body">
+                        <p class="card-text"><b>Paris-Brest</b><br>Corona de pasta choux, muselina de chocolate y toffee.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 25rem;">
+                        <img class="card-img-top" src="img/5.jpg" alt="Croquembouche">
+                        <div class="card-body">
+                        <p class="card-text"><b>Croquembouche</b><br>Torre de profiteroles rellenos de crema pastelera y caramelo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 25rem;">
+                        <img class="card-img-top" src="img/6.jpeg" alt="Eclairs">
+                        <div class="card-body">
+                        <p class="card-text"><b>Eclairs</b><br>Rellenos de crema pastelera y baño de chocolate. Caja x 6 unidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+               
+       </div>
+              
+           
+          </div>
+       </div>
+    </section>
+
+    <section id="compra">
+        <div class="container">
+            <div class="title">Hacer un pedido</div>
+            <form action="#" id="miFormulario">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nombre completo</span>
+                        <input type="text" id="nombreCliente" placeholder="Ingresa tu nombre" required>
+                    </div>
+                </div>
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Teléfono</span>
+                        <input type="text" id="telefono" placeholder="Ingresa un teléfono" required>
+                    </div>
+                </div>
+                <div class="tipos-de-tortas">
+                    <input type="radio" name="torta" id="dot-1" value="Macarons">
+                    <input type="radio" name="torta" id="dot-2" value="Chocolate Dacquoise">
+                    <input type="radio" name="torta" id="dot-3" value="Torta Fraisier">
+                    <input type="radio" name="torta" id="dot-4" value="Paris-Brest">
+                    <input type="radio" name="torta" id="dot-5" value="Croquembouche">
+                    <input type="radio" name="torta" id="dot-6" value="Eclairs">
+
+                    
+
+                    <span class="titulo-tortas">Tortas</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="torta" id="macarons">Macarons <br> $1000</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="torta">Dacquoise <br> $2500</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="torta">Fraisier  <br> $2600</span>
+                        </label>
+                        <label for="dot-4">
+                            <span class="dot four"></span>
+                            <span class="torta">Paris-Brest <br> $2900 </span>
+                        </label>
+                        <label for="dot-5">
+                            <span class="dot five"></span>
+                            <span class="torta">Croquembouche <br> $4500</span>
+                        </label>
+                        <label for="dot-6">
+                            <span class="dot six"></span>
+                            <span class="torta">Eclairs <br> $900</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="envios">
+                    <label for="envios" class="titulo-envios">Elija una opción</label>
+                    <select id="envios" name="envios">
+                        <option value="si">Retiro por el local</option>
+                        <option value="no">Envio a domicilio ($150)</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <input type="submit" id="enviar" value="Confirmar">
+                </div>
+            </form>
+            <button id="boton_desplegar_formulario" class="btn btn-outline-secondary">Suscribite y recibí nuestras últimas novedades</button>
+
+        </div>
+    
+        <form id= "formulario" class="container">
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="email">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su e-mail">
+            </div> 
+            <input type="submit" value= Enviar class="boton">
+        </form>
+    </section>
+
+    <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+</body>
+</html>
